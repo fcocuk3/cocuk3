@@ -32,7 +32,7 @@ import time
 import threading
 
 # ===================== SSH101.com AYARLARI =====================
-RTMP_URL = "rtmp://ssh101.bozztv.com:1935/ssh101"
+RTMP_URL = "rtmp://ssh101.bozztv.com/ssh101"
 STREAM_KEY = "mutlu1"
 rtmp_server = f"{RTMP_URL}/{STREAM_KEY}"
 
