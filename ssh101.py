@@ -37,7 +37,7 @@ STREAM_KEY = "mutlu1"
 rtmp_server = f"{RTMP_URL}/{STREAM_KEY}"
 
 # ===================== YAYIN AYARLARI =====================
-VIDEO_URL = "https://saran-live.ercdn.net/fx/index.m3u8"
+VIDEO_URL = "https://nord.ayakkabiparti.lol/sinema1002/index.m3u8"
 LOGO_URL = "https://raw.githubusercontent.com/mutlumedya/yayin/refs/heads/main/sinema.png"
 
 print("=" * 50)
