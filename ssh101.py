@@ -33,12 +33,12 @@ import threading
 
 # ===================== SSH101.com AYARLARI =====================
 RTMP_URL = "rtmp://ssh101.bozztv.com/ssh101"
-STREAM_KEY = "mutlu2"
+STREAM_KEY = "maxitv"
 rtmp_server = f"{RTMP_URL}/{STREAM_KEY}"
 
 # ===================== YAYIN AYARLARI =====================
-VIDEO_URL = "https://nord.ayakkabiparti.lol/sinema1002/index.m3u8"
-LOGO_URL = "https://raw.githubusercontent.com/mutlumedya/yayin/refs/heads/main/sinema.png"
+VIDEO_URL = "https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/cizgi-film-tv/playlist/0.m3u8"
+LOGO_URL = "https://i.postimg.cc/66gY3St5/686c138f-c2ac-4480-92f7-5e557b1cc63c-removebg-preview.png"
 
 print("=" * 50)
 print("📺 SSH101.com Yayın Başlatılıyor (Düşük Bitrate)")
@@ -61,7 +61,7 @@ command = [
     '[0:v]scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2,fps=25[v0];'
     '[1:v]scale=230:90[logo];'
     '[v0][logo]overlay=W-w-10:3[v1];'
-    '[v1]drawtext=text=t.me/digitaltivi:fontcolor=white:fontsize=24:box=1:boxcolor=black@0.6:boxborderw=5:x=(w-text_w)/2:y=h-text_h-20[v]',
+    '[v1]drawtext=text=instagram.com/kanalfturkiye:fontcolor=white:fontsize=24:box=1:boxcolor=black@0.6:boxborderw=5:x=(w-text_w)/2:y=h-text_h-20[v]',
     '-map', '[v]',
     '-map', '0:a?',
     '-c:v', 'libx264',
